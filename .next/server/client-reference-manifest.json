@@ -40,25 +40,9 @@
         "async": false
       }
     },
-    "(app-client)/./components/about.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/about.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/experience.tsx": {
       "*": {
         "id": "(sc_client)/./components/experience.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/projects.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/projects.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -72,9 +56,9 @@
         "async": false
       }
     },
-    "(app-client)/./components/contact.tsx": {
+    "(app-client)/./components/projects.tsx": {
       "*": {
-        "id": "(sc_client)/./components/contact.tsx",
+        "id": "(sc_client)/./components/projects.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -83,6 +67,22 @@
     "(app-client)/./components/section-divider.tsx": {
       "*": {
         "id": "(sc_client)/./components/section-divider.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/about.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/about.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/contact.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/contact.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -219,24 +219,8 @@
       ],
       "async": false
     },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/about.tsx": {
-      "id": "(app-client)/./components/about.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/experience.tsx": {
       "id": "(app-client)/./components/experience.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/projects.tsx": {
-      "id": "(app-client)/./components/projects.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
@@ -251,8 +235,8 @@
       ],
       "async": false
     },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/contact.tsx": {
-      "id": "(app-client)/./components/contact.tsx",
+    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/projects.tsx": {
+      "id": "(app-client)/./components/projects.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
@@ -261,6 +245,22 @@
     },
     "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/section-divider.tsx": {
       "id": "(app-client)/./components/section-divider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/about.tsx": {
+      "id": "(app-client)/./components/about.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/contact.tsx": {
+      "id": "(app-client)/./components/contact.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"

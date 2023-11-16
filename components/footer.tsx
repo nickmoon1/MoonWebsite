@@ -7,9 +7,6 @@ export default function Footer() {
       <small className="mb-2 block text-xs">
             &copy; {year} Nickmoon. All rights reserved.
       </small>
-//      <p className="text-xs">
-//        <span className="font-semibold">Come Back Again!:</span> it was nice seeing you.
-//      </p>
     </footer>
   );
 }
