@@ -12,6 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Nickmoon Mware | Software Engineer",
   description: "Nickmoon Mware is a Software Engineer with 4 years of experience.",
+  verification: {
+    google: "Np3sGoAXio_HoipfiVcvDdHyRW4BuHQ2b2lX4Uxybl4",
+},
+  keywords: "Nickmoon Mware, Moon Mware, University of Nebraska-Lincoln Computer Science, Software Engineer"
 };
 
 export default function RootLayout({
