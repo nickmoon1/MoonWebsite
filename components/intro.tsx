@@ -64,8 +64,8 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Nickmoon(Moon) Mware.</span> I'm a{" "}
         <span className="font-bold">software developer</span> with{" "}
-        <span className="font-bold">3 years</span> of experience. I enjoy
-        building <span className="italic">Natural Language Programs </span>. My passion is{" "}
+        <span className="font-bold">4 years</span> of experience. I enjoy
+        building <span className="italic"> software that deals with Natural Language Processing (NLP) </span>. My passion is{" "}
         <span className="underline">Data Science and EVERYTHING CODE </span>.
       </motion.h1>
 
