@@ -60,25 +60,18 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Impact of Accents on the Operation of Voice User Interfaces",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Developed an interactive voice recognition software that translates spoken and recorded audio text.",
+    tags: ["NLP", "Machine Learning", "Python", "Librosa", "FastAPI"],
     
   },
   {
-    title: "rmtDev",
+    title: "A Comparative Study of Six Scripts Based on Extend Feature List",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Conducted a comparative analysis on six scripts (Persian, Kurdish, Hebrew, Georgian, Swahili and Egyptian Arabic) to identify shared patterns across the languages.",
+    tags: ["Python", "SQL", "Oracle Database", "C++", "SciPy"],
   
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    
   },
 ] as const;
 
