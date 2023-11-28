@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import {Analytics} from "@vercel/analytics/react";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <Analytics />
     </main>
   );
 }
