@@ -40,46 +40,6 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/react-hot-toast/dist/index.mjs": {
-      "*": {
-        "id": "(sc_client)/./node_modules/react-hot-toast/dist/index.mjs",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/header.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/header.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/theme-switch.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/theme-switch.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./context/active-section-context.tsx": {
-      "*": {
-        "id": "(sc_client)/./context/active-section-context.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./context/theme-context.tsx": {
-      "*": {
-        "id": "(sc_client)/./context/theme-context.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/about.tsx": {
       "*": {
         "id": "(sc_client)/./components/about.tsx",
@@ -104,17 +64,17 @@
         "async": false
       }
     },
-    "(app-client)/./components/projects.tsx": {
+    "(app-client)/./components/intro.tsx": {
       "*": {
-        "id": "(sc_client)/./components/projects.tsx",
+        "id": "(sc_client)/./components/intro.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./components/intro.tsx": {
+    "(app-client)/./components/projects.tsx": {
       "*": {
-        "id": "(sc_client)/./components/intro.tsx",
+        "id": "(sc_client)/./components/projects.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -131,14 +91,6 @@
     "(app-client)/./components/skills.tsx": {
       "*": {
         "id": "(sc_client)/./components/skills.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -227,62 +179,6 @@
       ],
       "async": false
     },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/node_modules/react-hot-toast/dist/index.mjs": {
-      "id": "(app-client)/./node_modules/react-hot-toast/dist/index.mjs",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
-      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/header.tsx": {
-      "id": "(app-client)/./components/header.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/theme-switch.tsx": {
-      "id": "(app-client)/./components/theme-switch.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/context/active-section-context.tsx": {
-      "id": "(app-client)/./context/active-section-context.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/context/theme-context.tsx": {
-      "id": "(app-client)/./context/theme-context.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/app/globals.css": {
-      "id": "(app-client)/./app/globals.css",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/about.tsx": {
       "id": "(app-client)/./components/about.tsx",
       "name": "*",
@@ -307,16 +203,16 @@
       ],
       "async": false
     },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/projects.tsx": {
-      "id": "(app-client)/./components/projects.tsx",
+    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/intro.tsx": {
+      "id": "(app-client)/./components/intro.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/intro.tsx": {
-      "id": "(app-client)/./components/intro.tsx",
+    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/components/projects.tsx": {
+      "id": "(app-client)/./components/projects.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
@@ -338,22 +234,12 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
-    },
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/node_modules/@vercel/analytics/dist/react/index.js": {
-      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/app/layout": [
-      "static/css/app/layout.css"
-    ],
     "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/app/page": [
       "static/css/app/page.css"
-    ]
+    ],
+    "/Users/moonmware/Desktop/Self/Robin/MoonWebsite/app/layout": []
   }
 }
