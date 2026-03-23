@@ -11,36 +11,43 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[48rem] scroll-mt-28 text-center leading-8 sm:mb-32"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        Hello, I'm Moon from Kenya, currently residing in the USA. While pursuing my B.S. degree in {" "}
-        <span className="font-medium">Computer Science</span> at Benedict College, I invested more into my
-        passion for programming. Afterwards, I enrolled in a Masters program at the University of Nebraska-Lincoln (UNL) and learned{" "}
-        <span className="font-medium">the intricacies of Machine Learning and Natural Language Processing</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+      <SectionHeading>About</SectionHeading>
+      <p className="mb-4">
+        I&apos;m Nickmoon Mware, a data and AI-focused technologist with a
+        background in <span className="font-medium">computer science</span>,
+        analytics, and applied research. I earned my B.S. in Computer Science
+        from <span className="font-medium">Benedict College</span> and my
+        master&apos;s in Computer Science from the{" "}
+        <span className="font-medium">University of Nebraska-Lincoln</span>. I
+        am currently pursuing an M.S. in{" "}
         <span className="font-medium">
-          Python, C++, and SQL
+          Information Systems &amp; Business Analytics
+        </span>{" "}
+        at Park University.
+      </p>
+
+      <p className="mb-4">
+        My graduate research centered on{" "}
+        <span className="font-medium">
+          natural language processing and voice user interfaces
         </span>
-        . I am also familiar with JavaScript and PHP. I am always looking to
-        learn new technologies. I am currently open to collaborate on any opensource NLP projects.
+        , with a particular interest in how accents affect speech-driven systems
+        and user experience.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, playing basketball, swimming and reading. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning to{" "}
-        <span className="font-medium">cook different cuisine </span>. I'm also
-        learning how to play the guitar.
+        Today, I&apos;m focused on{" "}
+        <span className="font-medium">
+          machine learning, generative AI, and data analytics
+        </span>
+        , using data to uncover patterns, build useful models, and communicate
+        findings clearly for both technical and non-technical audiences.
       </p>
     </motion.section>
   );

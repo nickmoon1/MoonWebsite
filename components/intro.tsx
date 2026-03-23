@@ -5,7 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { HiDownload, HiOutlineMail } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[56rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src= "/Mware.jpeg"
+              src="/Mware.jpeg"
               alt="Mware portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
 
@@ -57,61 +57,88 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.p
+        className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-gray-500 dark:text-white/55"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Nickmoon(Moon) Mware.</span> I'm a{" "}
-        <span className="font-bold">software developer</span> with{" "}
-        <span className="font-bold">4 years</span> of experience. I enjoy
-        building <span className="italic">Natural Language Programs </span>. My passion is{" "}
-        <span className="underline">Data Science and EVERYTHING CODE </span>.
+        Data Analyst | Machine Learning | Generative AI
+      </motion.p>
+
+      <motion.h1
+        className="mt-4 px-4 text-3xl font-semibold !leading-[1.25] sm:text-5xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        Nickmoon (Moon) Mware
       </motion.h1>
 
+      <motion.p
+        className="mx-auto mt-6 max-w-[42rem] px-4 text-lg leading-8 text-gray-700 dark:text-white/75"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        Data professional with a background in machine learning and academia,
+        focused on transforming complex datasets into meaningful insights
+        through Analytics, Natural Language Processing, Predictive Modeling, and
+        Generative AI workflows.
+      </motion.p>
+
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="mt-10 flex flex-col items-center justify-center gap-3 px-4 text-lg font-medium sm:flex-row sm:flex-wrap"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
         }}
       >
+        <a
+          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+          href="/Resume.pdf"
+          download
+        >
+          Resume
+          <HiDownload className="opacity-70 transition group-hover:translate-y-1" />
+        </a>
+
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group borderBlack flex items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact
+          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Resume.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="flex items-center gap-2 rounded-full bg-white px-6 py-3 text-gray-700 transition hover:scale-110 hover:text-gray-950 focus:scale-110 active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80"
           href="https://www.linkedin.com/in/moonmware/"
           target="_blank"
+          rel="noreferrer"
         >
           <BsLinkedin />
+          LinkedIn
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="flex items-center gap-2 rounded-full bg-white px-6 py-3 text-gray-700 transition hover:scale-110 hover:text-gray-950 focus:scale-110 active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80"
           href="https://github.com/nickmoon1"
           target="_blank"
+          rel="noreferrer"
         >
           <FaGithubSquare />
+          GitHub
+        </a>
+
+        <a
+          className="flex items-center gap-2 rounded-full bg-white px-6 py-3 text-gray-700 transition hover:scale-110 hover:text-gray-950 focus:scale-110 active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80"
+          href="mailto:nickmoonmware@gmail.com"
+        >
+          <HiOutlineMail />
+          Email
         </a>
       </motion.div>
     </section>
