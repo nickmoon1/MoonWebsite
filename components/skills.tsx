@@ -27,13 +27,17 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[56rem] scroll-mt-28 text-center sm:mb-32"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>Core tools</SectionHeading>
+      <p className="mx-auto mb-8 max-w-[40rem] leading-7 text-gray-700 dark:text-white/75">
+        Tools and methods I use across analytics, machine learning, NLP,
+        visualization, and production-ready data workflows.
+      </p>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
