@@ -123,7 +123,7 @@ export const portfolioData: readonly PortfolioItem[] = [
   {
     title: "Educational Chatbot Learning Assistant",
     description:
-      "A conversational AI direction aligned with educational support use cases, informed by your adjunct teaching work and the IEEE educational chatbot reference you shared.",
+      "Conversational AI focused on educational support. I leveraged my experience as an adjunct instructor and the IEEE educational chatbot reference to design intelligent learning assistants that bridge the gap between pedadogy and technology.",
     tools: ["Chatbots", "NLP", "Educational AI", "Learning Assistant"],
     href: "https://ieeexplore.ieee.org/abstract/document/11328214/",
     linkLabel: "View IEEE abstract",
