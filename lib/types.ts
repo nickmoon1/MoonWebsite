@@ -5,7 +5,6 @@ export type SectionName =
   | "About"
   | "Portfolio"
   | "Certifications"
-  | "Presentations"
   | "Insights"
   | "Skills"
   | "Experience"
@@ -14,7 +13,7 @@ export type SectionName =
 export type NavLink = {
   name: Extract<
     SectionName,
-    "Home" | "About" | "Portfolio" | "Certifications" | "Presentations" | "Contact"
+    "Home" | "About" | "Portfolio" | "Certifications" | "Contact"
   >;
   hash: `#${string}`;
 };
@@ -34,6 +33,9 @@ export type PortfolioItem = {
   href?: string;
   linkLabel?: string;
   featured?: boolean;
+  context?: string;
+  insight?: string;
+  businessImpact?: string;
   problem?: string;
   methods?: string;
   findings?: string;
@@ -44,13 +46,6 @@ export type CertificationItem = {
   issuer: string;
   summary: string;
   href?: string;
-};
-
-export type PresentationItem = {
-  title: string;
-  summary: string;
-  href?: string;
-  linkLabel?: string;
 };
 
 export type InsightItem = {

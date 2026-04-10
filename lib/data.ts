@@ -8,7 +8,6 @@ import type {
   InsightItem,
   NavLink,
   PortfolioItem,
-  PresentationItem,
 } from "./types";
 
 export const links: readonly NavLink[] = [
@@ -27,10 +26,6 @@ export const links: readonly NavLink[] = [
   {
     name: "Certifications",
     hash: "#certifications",
-  },
-  {
-    name: "Presentations",
-    hash: "#presentations",
   },
   {
     name: "Contact",
@@ -59,7 +54,7 @@ export const experiencesData: readonly ExperienceItem[] = [
     title: "M.S. in Information Systems & Business Analytics",
     location: "Park University",
     description:
-      "Currently expanding skills in analytics, business decision support, and data-driven storytelling to complement an engineering and ML background.",
+      "Currently strengthening business analytics, decision support, and data storytelling skills to target analyst, BI, and applied machine learning roles that connect technical models to business outcomes.",
     icon: React.createElement(LuGraduationCap),
     date: "2024 - Current",
   },
@@ -107,9 +102,9 @@ export const experiencesData: readonly ExperienceItem[] = [
 
 export const portfolioData: readonly PortfolioItem[] = [
   {
-    title: "Customer Prediction Models for Powell",
+    title: "Customer Prediction Models for an eBook Store",
     description:
-      "Built machine learning models to predict average monthly spending and eBook subscription likelihood from a customer dataset with 16,519 records and 25 variables.",
+      "Built regression and classification models on 16,519 customer records to predict monthly spend and subscription likelihood for an eBook store.",
     tools: [
       "Python",
       "PyCaret",
@@ -119,6 +114,19 @@ export const portfolioData: readonly PortfolioItem[] = [
     ],
     href: "/Powell-eBook-Prediction-Models%20(1).pdf",
     linkLabel: "View analysis PDF",
+    featured: true,
+    context:
+      "Framed as a customer analytics case study for an eBook store, focused on helping non-technical stakeholders understand who is most likely to subscribe and spend more.",
+    insight:
+      "The strongest value comes from turning model output into targeting decisions, not just reporting accuracy scores in isolation.",
+    businessImpact:
+      "Built customer spend and subscription models using PyCaret and gradient boosting so marketing and sales teams could prioritize higher-propensity customer segments with more confidence.",
+    problem:
+      "The business needed a clearer way to identify customers likely to subscribe and estimate monthly value before spending budget on broad outreach.",
+    methods:
+      "Prepared customer features, compared multiple regression and classification approaches, and selected models that balanced predictive performance with stakeholder interpretability.",
+    findings:
+      "The final workflow highlighted which customers were more likely to subscribe and spend more, giving the team a more targeted lens for campaign planning and customer prioritization.",
   },
   {
     title: "Educational Chatbot Learning Assistant",
@@ -127,6 +135,18 @@ export const portfolioData: readonly PortfolioItem[] = [
     tools: ["Chatbots", "NLP", "Educational AI", "Learning Assistant"],
     href: "https://ieeexplore.ieee.org/abstract/document/11328214/",
     linkLabel: "View IEEE abstract",
+    context:
+      "Conceptual and research-backed educational AI project shaped by teaching experience, chatbot design thinking, and current work in applied analytics.",
+    insight:
+      "The most effective learning assistants do more than answer questions. They support comprehension, reduce friction for students, and align responses with instructional goals.",
+    businessImpact:
+      "Designed an educational chatbot concept using instructional context and NLP framing so student support could become more scalable, consistent, and accessible outside normal class time.",
+    problem:
+      "Students often need timely academic support outside scheduled instruction, while instructors need ways to extend guidance without sacrificing consistency or learning quality.",
+    methods:
+      "Combined adjunct teaching experience with educational chatbot research to define a learning assistant use case focused on student support, question handling, and better pedagogy-technology alignment.",
+    findings:
+      "The project showed how chatbot workflows can complement instruction by improving response availability, reinforcing course support, and creating a stronger foundation for future conversational AI in education.",
   },
   {
     title: "Voice User Interface Accent Research",
@@ -150,18 +170,12 @@ export const portfolioData: readonly PortfolioItem[] = [
     tools: ["Python", "SQL", "EDA", "Data Cleaning", "Stakeholder Reporting"],
     href: "/Healthcare.pdf",
     linkLabel: "Open healthcare EDA PDF",
-  },
-  {
-    title: "Predictive Modeling & Forecasting",
-    description:
-      "Developed regression, classification, and time-series models for school performance, customer spend, patient readmission, subscription adoption, and 30-day incident forecasting.",
-    tools: [
-      "scikit-learn",
-      "Prophet",
-      "Regression",
-      "Classification",
-      "Forecasting",
-    ],
+    context:
+      "Exploratory healthcare analytics project on a readmission dataset that hiring managers will immediately recognize.",
+    insight:
+      "This project is strongest when it shows the full workflow: profiling, missing data treatment, feature behavior, and a clear next modeling step.",
+    businessImpact:
+      "Analyzed readmission patterns and data quality issues so the dataset could support more reliable risk modeling and operational decision-making in a healthcare context.",
   },
   {
     title: "Interactive Tableau Dashboards",
@@ -170,6 +184,12 @@ export const portfolioData: readonly PortfolioItem[] = [
     tools: ["Tableau", "Dashboards", "KPIs", "Data Visualization"],
     href: "https://public.tableau.com/app/profile/nickmoon.mware/vizzes",
     linkLabel: "View Tableau Public profile",
+    context:
+      "Public dashboard work intended for recruiters, hiring managers, and non-technical stakeholders reviewing projects.",
+    insight:
+      "Each dashboard should communicate the business question, dataset context, and primary takeaway within the first few seconds.",
+    businessImpact:
+      "Built story-first dashboards in Tableau so viewers could move from chart reading to decision insight quickly, without needing a live walkthrough.",
   },
 ] as const;
 
@@ -179,63 +199,28 @@ export const certificationsData: readonly CertificationItem[] = [
     issuer: "IBM",
     summary:
       "Covers practical applications of generative AI in data science workflows, including analysis support, experimentation, and model-assisted productivity.",
+    href: "https://www.credly.com/badges/fbfaeea6-c993-4c1d-8c9d-d73f87c0c28c",
   },
   {
     title: "Generative AI for End-to-End Data Science Modeling",
     issuer: "Dallas Data Science Academy",
     summary:
       "Focuses on integrating generative AI into the full data science lifecycle, from problem framing and analysis to modeling and communication.",
+    href: "https://www.credly.com/badges/11c39330-fb30-4de8-b73c-2d25ee7012bd",
   },
   {
-    title: "Business Analysis Fundamentals",
+    title: "Business Intelligence",
     issuer: "Coursera",
     summary:
-      "Supports business-facing communication, requirements thinking, and the ability to connect analytical outputs to decision-making contexts.",
+      "Supports dashboard design, business-facing communication, and the ability to connect analytical outputs to decision-making contexts.",
+    href: "/Business_intelligence_coursera.pdf",
   },
   {
     title: "SQL Essential Training",
     issuer: "LinkedIn Learning",
     summary:
       "Reinforces practical SQL querying skills used across exploration, reporting, and data validation workflows.",
-  },
-] as const;
-
-export const presentationsData: readonly PresentationItem[] = [
-  {
-    title: "Powell Prediction Models",
-    summary:
-      "Presentation-ready PDF summarizing customer segmentation, subscription prediction, monthly spending forecasts, and model-selection decisions.",
-    href: "/Powell-eBook-Prediction-Models%20(1).pdf",
-    linkLabel: "Open ML analysis PDF",
-  },
-  {
-    title: "Healthcare Readmission EDA",
-    summary:
-      "Exploratory analysis of a healthcare readmission dataset covering 12,980 records, variable distributions, key clinical and cost features, and next-step modeling considerations.",
-    href: "/Healthcare.pdf",
-    linkLabel: "Open healthcare EDA PDF",
-  },
-  {
-    title: "Educational Chatbot Learning Assistant Reference",
-    summary:
-      "External IEEE reference connected to chatbot-assisted learning and educational support, useful for framing future conversational AI portfolio work.",
-    href: "https://ieeexplore.ieee.org/abstract/document/11328214/",
-    linkLabel: "Open IEEE abstract",
-  },
-  {
-    title: "Tableau Public Profile",
-    summary:
-      "Central hub for interactive dashboards and public visual analytics work across portfolio projects and data storytelling examples.",
-    href: "https://public.tableau.com/app/profile/nickmoon.mware/vizzes",
-    linkLabel: "Open Tableau profile",
-  },
-  {
-    title:
-      "Machine Learning Based Network Implementation to Translate Spoken Audio to Words in TextFile",
-    summary:
-      "Research paper and artifact covering the ASR workflow, model design, word error rate framing, and findings from the speech-to-text study.",
-    href: "/NLP_SPEECH_TEXT.pdf",
-    linkLabel: "Open research PDF",
+    href: "https://www.linkedin.com/learning/certificates/1ab426eff60c5fdc6d80c3b95d0e421872f88b0e25218928eb182a6a5308110b?trk=share_certificate",
   },
 ] as const;
 

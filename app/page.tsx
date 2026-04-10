@@ -4,7 +4,6 @@ import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Insights from "@/components/insights";
 import Intro from "@/components/intro";
-import Presentations from "@/components/presentations";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
@@ -18,7 +17,6 @@ export default function Home() {
       <About />
       <Projects />
       <Certifications />
-      <Presentations />
       <Insights />
       <Skills />
       <Experience />

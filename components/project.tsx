@@ -12,6 +12,9 @@ export default function Project({
   href,
   linkLabel,
   featured,
+  context,
+  insight,
+  businessImpact,
   problem,
   methods,
   findings,
@@ -34,9 +37,7 @@ export default function Project({
       className="group mb-5 sm:mb-8 last:mb-0"
     >
       <section
-        className={`overflow-hidden rounded-2xl border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 ${
-          featured ? "max-w-[56rem]" : "max-w-[50rem]"
-        }`}
+        className="overflow-hidden rounded-2xl border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20"
       >
         <div className="flex flex-col gap-5 px-5 py-6 sm:px-8 sm:py-8">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -71,8 +72,47 @@ export default function Project({
             )}
           </div>
 
+          {(featured || context || insight || businessImpact) && (
+            <div
+              className={`grid gap-4 ${
+                featured ? "lg:grid-cols-3" : "lg:grid-cols-2"
+              }`}
+            >
+              {context && (
+                <div className="rounded-xl bg-white/80 p-4 dark:bg-black/10">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-white/50">
+                    Context
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-gray-700 dark:text-white/75">
+                    {context}
+                  </p>
+                </div>
+              )}
+              {insight && (
+                <div className="rounded-xl bg-white/80 p-4 dark:bg-black/10">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-white/50">
+                    Key insight
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-gray-700 dark:text-white/75">
+                    {insight}
+                  </p>
+                </div>
+              )}
+              {businessImpact && (
+                <div className="rounded-xl bg-white/80 p-4 dark:bg-black/10">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-white/50">
+                    Business impact
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-gray-700 dark:text-white/75">
+                    {businessImpact}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+
           {featured && (
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 lg:grid-cols-3">
               <div className="rounded-xl bg-white/80 p-4 dark:bg-black/10">
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-white/50">
                   Problem

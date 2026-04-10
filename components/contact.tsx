@@ -40,6 +40,31 @@ export default function Contact() {
         or send a message below.
       </p>
 
+      <div className="mt-5 space-y-2 text-sm text-gray-700 dark:text-white/75">
+        <p>
+          LinkedIn:{" "}
+          <a
+            className="underline underline-offset-4"
+            href="https://www.linkedin.com/in/moonmware/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            linkedin.com/in/moonmware
+          </a>
+        </p>
+        <p>
+          GitHub:{" "}
+          <a
+            className="underline underline-offset-4"
+            href="https://github.com/nickmoon1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github.com/nickmoon1
+          </a>
+        </p>
+      </div>
+
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
@@ -52,7 +77,7 @@ export default function Contact() {
 
           toast.success("Email sent successfully!");
         }}
-      >
+    >
         <input
           className="h-14 rounded-lg borderBlack px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           name="senderEmail"
