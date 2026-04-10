@@ -10,12 +10,16 @@ export default function Projects() {
   const { ref } = useSectionInView("Portfolio", 0.35);
 
   return (
-    <section ref={ref} id="portfolio" className="mb-28 scroll-mt-28">
-      <SectionHeading>Data science portfolio</SectionHeading>
-      <p className="mx-auto mb-10 max-w-[42rem] text-center leading-7 text-gray-700 dark:text-white/75">
-        Selected work across NLP research, analytics, machine learning, and
-        generative AI workflows, with an emphasis on translating technical work
-        into clear insights.
+    <section
+      ref={ref}
+      id="portfolio"
+      className="mb-28 w-full max-w-[72rem] scroll-mt-28"
+    >
+      <SectionHeading>Portfolio & presentations</SectionHeading>
+      <p className="mx-auto mb-10 max-w-[52rem] text-center leading-7 text-gray-700 dark:text-white/75">
+        Selected case studies, reports, and dashboards across machine learning,
+        analytics, NLP, and generative AI, presented with the business question,
+        approach, and takeaway in one place.
       </p>
       <div>
         {portfolioData.map((project) => (

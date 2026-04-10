@@ -29,7 +29,9 @@ export default function About() {
         <span className="font-medium">
           Information Systems &amp; Business Analytics
         </span>{" "}
-        at Park University.
+        at Park University, where I&apos;m sharpening the business analytics
+        and decision-support skills that support analyst, BI, and applied ML
+        roles.
       </p>
 
       <p className="mb-4">
