@@ -102,6 +102,34 @@ export const experiencesData: readonly ExperienceItem[] = [
 
 export const portfolioData: readonly PortfolioItem[] = [
   {
+    title: "CFPB Consumer Complaint Analytics",
+    description:
+      "Built a Python, SQL, and dashboard workflow using real Consumer Financial Protection Bureau complaint data to analyze product trends, response outcomes, and Texas complaint patterns.",
+    tools: [
+      "Python",
+      "SQL",
+      "SQLite",
+      "JavaScript",
+      "Data Cleaning",
+      "Dashboard",
+    ],
+    href: "https://github.com/nickmoon1/CFPB-complaint-analytics",
+    linkLabel: "View GitHub repo",
+    featured: true,
+    context:
+      "Public financial-services analytics project built from CFPB complaint data, with careful caveats around representativeness and responsible interpretation.",
+    insight:
+      "Complaint data is most useful as a monitoring signal when it is paired with product context, geography, response outcomes, and clear data limitations.",
+    businessImpact:
+      "Created a reusable analytics workflow that helps financial-services teams identify which product and issue patterns deserve deeper operational review.",
+    problem:
+      "Financial complaint data is large, messy, and easy to misread without a focused workflow for cleaning, filtering, aggregating, and explaining the limits of the dataset.",
+    methods:
+      "Processed the CFPB CSV ZIP locally, filtered financial product categories, cleaned dates and categorical fields, stored analysis-ready data in SQLite, and generated dashboard metrics for product, issue, state, and response patterns.",
+    findings:
+      "The initial sample highlights credit reporting and debt collection as high-volume monitoring areas, with Texas complaint patterns available for regional comparison and follow-up analysis.",
+  },
+  {
     title: "Customer Prediction Models for an eBook Store",
     description:
       "Built regression and classification models on 16,519 customer records to predict monthly spend and subscription likelihood for an eBook store.",
